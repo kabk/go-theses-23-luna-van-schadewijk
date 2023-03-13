@@ -70,6 +70,10 @@ section {
   font-family: GaisyrItalic;
 }
 
+.mobiletext {
+  display: none;
+}
+
 .tooltip {
   position: relative;
   background-color: #257550;
@@ -154,8 +158,6 @@ section {
   height: 90vh;
   z-index: 1000;
   pointer-events: all;
-  /* text-indent: 30px; */
-  /* overflow-y: scroll; */
 }
 
 .one {
@@ -180,9 +182,25 @@ section {
 }
 
 @media screen and (max-width: 779px) {
+
   .chapter {
+    display: none;
+  }
+
+  .mobiletext {
+    display: block;
+    position: absolute;
+    text-align: justify;
+    display: none;
+    font-size: 16pt;
+    color: #257550;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 100vw;
-    padding: 10px;
-    left: 0vw;
+    height: 90vh;
+    z-index: 1000;
+    pointer-events: all;
   }
 }
