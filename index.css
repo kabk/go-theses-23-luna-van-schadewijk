@@ -199,23 +199,49 @@ section {
 
 @media screen and (max-width: 779px) {
 
+  .infobar {
+    height: 24vw;
+  }
+
+  .info-two {
+    top: 9%;
+    width: 90vw;
+  }
+
+  .info-one, .info-three {
+    font-size: 10pt;
+  }
+
+#image-one {
+  /* display: none; */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+  .indent {
+    width: 80vw;
+    left: 15pt;
+  }
+
   .chapter {
     display: none !important;
   }
 
   .mobiletext {
     display: block !important;
-    padding: 10px;
     position: absolute;
     text-align: justify;
-    display: none;
-    font-size: 16pt;
+    font-size: 12pt;
     color: #257550;
-    top: 55%;
+    top: 60%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 90vw;
     height: 90vh;
     z-index: 1000;
     pointer-events: all;
