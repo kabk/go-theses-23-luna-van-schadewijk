@@ -10,6 +10,12 @@ body {
   src: url(ABCGaisyr-Regular-Trial.woff2);
 }
 
+@font-face {
+  font-family: GaisyrItalic;
+  src: url(ABCGaisyr-RegularItalic-Trial.woff);
+  font-weight: italic;
+}
+
 p {
   text-indent: 30px;
   margin: 0;
@@ -58,6 +64,10 @@ section {
   text-indent: 0;
   left: 30pt;
   width: 37vw;
+}
+
+.italic {
+  font-family: GaisyrItalic;
 }
 
 .tooltip {
@@ -126,14 +136,16 @@ section {
 .info-one, .info-two, .info-three {
   position: fixed;
   z-index: 2;
-  top: 20px;
+  top: 2%;
   color: white;
 }
 
 .chapter {
   position: absolute;
+  text-align: justify;
   display: none;
   font-size: 16pt;
+  color: #257550;
   top: 55%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -155,8 +167,12 @@ section {
 }
 
 .info-two {
-  font-size: 16pt;
-  left: 36vw;
+  top: 3%;
+  font-family: GaisyrItalic;
+  left: 50%;
+  font-size: 20pt;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .info-three {
