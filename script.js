@@ -1,5 +1,3 @@
-
-
         let abs = window.scrollX + document.querySelector('#image-one').getBoundingClientRect().left;
         let ch0 = window.scrollX + document.querySelector('#image-two').getBoundingClientRect().left;
         let ch1 = window.scrollX + document.querySelector('#image-three').getBoundingClientRect().left;
@@ -121,3 +119,50 @@
                       chapter8.style.display = "block";
                     }
                 });
+
+document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
+  footnotemarkers.addEventListener("mouseenter", function(){
+    // console.log(footnotemarkers.classList[1])
+    document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
+      if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
+        footnotecontents.style.display = "block";
+      }
+
+    });
+
+  })
+  footnotemarkers.addEventListener("mouseleave", function(){
+    document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
+      footnotecontents.style.display = "none";
+    })
+  })
+});
+
+document.querySelector(".infobar").addEventListener("click", function(){
+  this.classList.toggle("fullheight");
+  document.querySelector(".infobartext").classList.toggle("visible");
+
+})
+
+// mobile starts here
+
+if(window.innerWidth < 779) {
+
+  document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
+    footnotemarkers.addEventListener("click", function(){
+      // console.log(footnotemarkers.classList[1])
+      document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
+        if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
+          footnotecontents.style.display = "block";
+        }
+
+      });
+
+    })
+    footnotemarkers.addEventListener("click", function(){
+      document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
+        footnotecontents.style.display = "none";
+      })
+    })
+  });
+}
