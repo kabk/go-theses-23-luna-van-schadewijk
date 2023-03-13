@@ -6,12 +6,23 @@ body {
   /* overflow: hidden; */
 }
 
+/* @font-face {
+  font-family: Latitude;
+  src: url(images/Latitude-Regular.otf);
+} */
 
+p {
+  text-indent: 30px;
+  margin: 0;
+  pointer-events: all;
+}
 
 img {
   height: 300px;
+  z-index: 9999;
   position: relative;
   left: 1200px;
+  pointer-events: none;
   /* display: flex;
   gap: 25px; */
   margin: 0px 1000px 30px 20px;
@@ -39,9 +50,22 @@ section {
   font-size: 12pt;
 }
 
+.noindent {
+  text-indent: 0;
+}
+
+.indent {
+  position: relative;
+  text-indent: 0;
+  left: 30pt;
+  width: 37vw;
+}
+
 .tooltip {
   position: relative;
   background-color: #017033;
+  color: white;
+  text-indent: 0pt;
 }
 
 .tooltip:after{
@@ -58,10 +82,8 @@ section {
   line-height: 14pt;
   width: 300px;
   height: 55px;
-  padding: 10px;
   left: -715px;
   top: -280px;
-  border-radius: 5px;
 }
 
 .tooltip:hover:after{
@@ -79,7 +101,7 @@ section {
 .tooltip_image:after{
   content: attr(data-tooltip);
   background: #017033;
-  color: black;
+  color: white;
   font-size: 10pt;
   width: 200px;
   height: 55px;
@@ -91,12 +113,6 @@ section {
 
 .tooltip_image:hover:after{
   opacity: 1;
-}
-
-
-
-.hide {
-  display: none;
 }
 
 .infobar {
@@ -121,9 +137,11 @@ section {
   left: 30vw;
   top: 10vh;
   width: 40vw;
+  height: 90vh;
   z-index: 1000;
-  text-indent: 30px;
-  overflow: scroll;
+  pointer-events: all;
+  /* text-indent: 30px; */
+  /* overflow-y: scroll; */
 }
 
 .one {
@@ -141,4 +159,12 @@ section {
 
 .info-three {
   right: 20px;
+}
+
+@media screen and (max-width: 779px) {
+  .chapter {
+    width: 100vw;
+    padding: 10px;
+    left: 0vw;
+  }
 }

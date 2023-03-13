@@ -17,14 +17,14 @@
         let chapter4 = document.querySelector('.four');
         let chapter5 = document.querySelector('.five');
         let chapter6 = document.querySelector('.six');
+        let chapter7 = document.querySelector('.seven');
+        let chapter8 = document.querySelector('.eight');
 
         const scrollContainer = document.querySelector("main");
 
         scrollContainer.addEventListener("wheel", (evt) => {
             evt.preventDefault();
             scrollContainer.scrollLeft += evt.deltaY;
-            console.log(scrollContainer.scrollLeft);
-            console.log(ch1);
 
                     let left = scrollContainer.scrollLeft;
 
@@ -35,89 +35,89 @@
                         chapter4.style.display = "none";
                         chapter5.style.display = "none";
                         chapter6.style.display = "none";
+                        chapter7.style.display = "none";
+                        chapter8.style.display = "none";
                     } else if (left > abs && left < ch1) {
-                      chapter1.style.display = "block";
-                      chapter2.style.display = "none";
+                      chapter1.style.display = "none";
+                      chapter2.style.display = "block";
                       chapter3.style.display = "none";
                       chapter4.style.display = "none";
                       chapter5.style.display = "none";
                       chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
                     } else if (left > ch1 && left < ch1_1) {
                       chapter1.style.display = "none";
-                      chapter2.style.display = "block";
-                      chapter3.style.display = "none";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "block";
                       chapter4.style.display = "none";
                       chapter5.style.display = "none";
                       chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
                     } else if (left > ch1_1 && left < ch1_2) {
                       chapter1.style.display = "none";
-                      chapter2.style.display = "block";
-                      chapter3.style.display = "none";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "block";
                       chapter4.style.display = "none";
                       chapter5.style.display = "none";
                       chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
                     } else if (left > ch1_2 && left < ch1_3) {
                       chapter1.style.display = "none";
-                      chapter2.style.display = "block";
+                      chapter2.style.display = "none";
                       chapter3.style.display = "none";
-                      chapter4.style.display = "none";
+                      chapter4.style.display = "block";
                       chapter5.style.display = "none";
                       chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
                     } else if (left > ch1_3 && left < ch2) {
                       chapter1.style.display = "none";
-                      chapter2.style.display = "block";
+                      chapter2.style.display = "none";
                       chapter3.style.display = "none";
                       chapter4.style.display = "none";
-                      chapter5.style.display = "none";
+                      chapter5.style.display = "block";
                       chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
                     } else if (left > ch2 && left < ch2_1) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "block";
-                      chapter4.style.display = "none";
-                      chapter5.style.display = "none";
-                      chapter6.style.display = "none";
-                    } else if (left > ch2_1 && left < ch2_2) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "block";
-                      chapter4.style.display = "none";
-                      chapter5.style.display = "none";
-                      chapter6.style.display = "none";
-                    } else if (left > ch2_2 && left < ch2_3) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "none";
-                      chapter4.style.display = "block";
-                      chapter5.style.display = "none";
-                      chapter6.style.display = "none";
-                    } else if (left > ch2_3 && left < ch3) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "none";
-                      chapter4.style.display = "block";
-                      chapter5.style.display = "none";
-                      chapter6.style.display = "none";
-                    } else if (left > ch3 && left < ch3_1) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "none";
-                      chapter4.style.display = "none";
-                      chapter5.style.display = "block";
-                      chapter6.style.display = "none";
-                    } else if (left > ch3_1 && left < ref) {
-                      chapter1.style.display = "none";
-                      chapter2.style.display = "none";
-                      chapter3.style.display = "none";
-                      chapter4.style.display = "none";
-                      chapter5.style.display = "block";
-                      chapter6.style.display = "none";
-                    } else if (left >= ref) {
                       chapter1.style.display = "none";
                       chapter2.style.display = "none";
                       chapter3.style.display = "none";
                       chapter4.style.display = "none";
                       chapter5.style.display = "none";
                       chapter6.style.display = "block";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
+                    } else if (left > ch2_1 && left < ch2_2) {
+                      chapter1.style.display = "none";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "none";
+                      chapter4.style.display = "none";
+                      chapter5.style.display = "none";
+                      chapter6.style.display = "none";
+                      chapter7.style.display = "block";
+                      chapter8.style.display = "none";
+                    } else if (left > ch2_2 && left < ch2_3) {
+                      chapter1.style.display = "none";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "none";
+                      chapter4.style.display = "none";
+                      chapter5.style.display = "none";
+                      chapter6.style.display = "none";
+                      chapter7.style.display = "block";
+                      chapter8.style.display = "none";
+                    }
+                    else if (left > ch2_3) {
+                      chapter1.style.display = "none";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "none";
+                      chapter4.style.display = "none";
+                      chapter5.style.display = "none";
+                      chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "block";
                     }
                 });
