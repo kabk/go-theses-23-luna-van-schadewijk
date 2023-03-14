@@ -102,7 +102,7 @@ section {
 }
 
 .footnote-content {
-  opacity: 0;
+  display: none;
   text-align: center;
   background-color: #c96333;
   color: white;
@@ -251,6 +251,7 @@ section {
   .footnote-content {
     font-size: 10pt;
     padding: 10px;
+    z-index: 3;
   }
 
   .navigationmob {
@@ -275,8 +276,10 @@ section {
 .imagery {
   display: none;
   position: fixed;
-  height: 250px;
-  top: 50%;
+width: 80vW;
+height: auto;
+top: 80%;
+z-index: 2;
   left: 44.5%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -304,7 +307,7 @@ section {
     transform: translate(-50%, -50%);
     width: 90vw;
     height: 90vh;
-    z-index: 1000;
+    z-index: 1;
     pointer-events: all;
   }
 
@@ -314,6 +317,11 @@ section {
 
   .footnote-content.visible {
     opacity: 1;
+  }
+
+  a {
+      text-decoration: none;
+      color: unset;
   }
 
   /* .fullheight, .visible {
