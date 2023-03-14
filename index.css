@@ -27,15 +27,7 @@ img {
   z-index: 1999;
   position: relative;
   left: 1200px;
-  /* pointer-events: none; */
-  /* display: flex;
-  gap: 25px; */
   margin: 0px 1000px 30px 20px;
-}
-
-img:hover + .hide {
-  display: block;
-  color: red;
 }
 
 main {
@@ -62,11 +54,22 @@ section {
 .indent {
   position: relative;
   text-indent: 0;
+  text-align: left;
   left: 30pt;
-  width: 37vw;
+  width: 40vw;
+}
+
+.bibliography {
+  text-align: left;
+  text-indent: -30px;
+  left: 55%;
 }
 
 .italic {
+  font-family: GaisyrItalic;
+}
+
+#italic {
   font-family: GaisyrItalic;
 }
 
@@ -83,15 +86,14 @@ section {
   text-align: center;
   background-color: #cbc7a8;
   font-size: 12pt;
-  line-height: 14pt;
-  position: absolute;
-  /* height: 55px; */
+  position: fixed !important;
   z-index: 1001;
+  width: 100vw;
   padding: 10pt;
   bottom: 0;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  transition: all 0.4s ease;
 }
 
 .footnote-marker {
@@ -103,17 +105,16 @@ section {
 
 .tooltip_image:after{
   position: relative;
-  content: '';
+  transform: translateX(-50%);
   transition: all 0.4s ease;
   opacity: 0;
   content: attr(data-tooltip);
-  background: #257550;
-  color: white;
-  font-size: 10pt;
+  background: #cbc7a8;
+  font-size: 12pt;
   width: 200px;
   height: 55px;
   top: -10px;
-  left: -230px;
+  z-index: 1005;
 }
 
 .tooltip_image:hover:after{
@@ -133,7 +134,7 @@ section {
   pointer-events: none;
 }
 
-.infobartext {
+/* .infobartext {
   opacity: 0;
   transition-delay: 0.1s;
   color: white;
@@ -142,16 +143,15 @@ section {
   position: absolute;
   top: 10%;
   font-size: 22pt;;
-}
+} */
 
-.infobartext.visible {
+/* .infobartext.visible {
   opacity: 1;
-}
+} */
 
-.infobar.fullheight {
+/* .infobar.fullheight {
   height: 45vh;
-  /* transition-delay: 0.5s; */
-}
+} */
 
 .info-one, .info-two, .info-three {
   position: fixed;
@@ -174,6 +174,7 @@ section {
   height: 90vh;
   z-index: 1000;
   pointer-events: all;
+  padding-bottom: 20px;
 }
 
 .one {
@@ -212,11 +213,17 @@ section {
     font-size: 10pt;
   }
 
-#image-one {
-  /* display: none; */
-  position: absolute;
-  top: 55%;
-  left: 50%;
+  .footnote-content {
+    font-size: 10pt;
+    padding: 10px;
+  }
+
+.imagery {
+  display: none;
+  position: fixed;
+  height: 250px;
+  top: 50%;
+  left: 44.5%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
@@ -246,4 +253,8 @@ section {
     z-index: 1000;
     pointer-events: all;
   }
+
+  /* .fullheight, .visible {
+    display: none;
+  } */
 }
