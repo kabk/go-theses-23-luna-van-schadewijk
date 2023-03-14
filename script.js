@@ -496,10 +496,10 @@ document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
 footnotemarkers.addEventListener("click", function(){
 console.log("click")
 document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
-if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
-  // document.querySelector(".footnote-content").classList.toggle("visible");
-  footnotecontents.style.display = "block";
-}
+  this.classList.toggle("visible");
+console.log("visible")
+
+});
 
 });
 
@@ -509,7 +509,6 @@ if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
 //     footnotecontents.style.display = "none";
 //   })
 // })
-});
 
 // image scroll MOBILE
 

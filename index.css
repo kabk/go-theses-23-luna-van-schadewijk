@@ -125,7 +125,7 @@ section {
 }
 
 .tooltip_image:after{
-  opacity: 0;
+  display: none;
   content: attr(data-tooltip);
   background: #c96333;
   color: white;
@@ -138,11 +138,10 @@ section {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.4s ease;
 }
 
 .tooltip_image:hover:after{
-  opacity: 1;
+  display: block;
 }
 
 .infobar {
