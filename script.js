@@ -239,6 +239,204 @@
                     }
                 });
 
+document.querySelector("#nav1").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "block";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "black";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav2").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "block";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "black";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav3").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "block";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "black";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav4").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "block";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "black";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav5").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "block";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "black";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav6").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "block";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "black";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav7").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "block";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "black";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav8").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "block";
+  document.querySelector('.nine').style.display = "none";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "black";
+  document.querySelector("#nav9").style.color = "white";
+});
+
+document.querySelector("#nav9").addEventListener("click", function(){
+  console.log("click")
+  document.querySelector('.one').style.display = "none";
+  document.querySelector('.two').style.display = "none";
+  document.querySelector('.three').style.display = "none";
+  document.querySelector('.four').style.display = "none";
+  document.querySelector('.five').style.display = "none";
+  document.querySelector('.six').style.display = "none";
+  document.querySelector('.seven').style.display = "none";
+  document.querySelector('.eight').style.display = "none";
+  document.querySelector('.nine').style.display = "block";
+  document.querySelector("#nav1").style.color = "white";
+  document.querySelector("#nav2").style.color = "white";
+  document.querySelector("#nav3").style.color = "white";
+  document.querySelector("#nav4").style.color = "white";
+  document.querySelector("#nav5").style.color = "white";
+  document.querySelector("#nav6").style.color = "white";
+  document.querySelector("#nav7").style.color = "white";
+  document.querySelector("#nav8").style.color = "white";
+  document.querySelector("#nav9").style.color = "black";
+});
+
 document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
   footnotemarkers.addEventListener("mouseenter", function(){
     // console.log(footnotemarkers.classList[1])
