@@ -47,6 +47,20 @@ section {
   font-size: 12pt;
 }
 
+.navigation {
+  text-align: center;
+  background-color: #cbc7a8;
+  color: black;
+  font-size: 12pt;
+  position: fixed !important;
+  width: 100vw;
+  padding: 5pt;
+  z-index: 2000;
+  top: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .noindent {
   text-indent: 0;
 }
@@ -62,7 +76,8 @@ section {
 .bibliography {
   text-align: left;
   text-indent: -30px;
-  left: 55%;
+  position: relative;
+  left: 2vw;
 }
 
 .italic {
@@ -82,7 +97,7 @@ section {
 }
 
 .footnote-content {
-  display: none;
+  opacity: 0;
   text-align: center;
   background-color: #cbc7a8;
   font-size: 12pt;
@@ -104,17 +119,19 @@ section {
 }
 
 .tooltip_image:after{
-  position: relative;
-  transform: translateX(-50%);
-  transition: all 0.4s ease;
   opacity: 0;
   content: attr(data-tooltip);
   background: #cbc7a8;
   font-size: 12pt;
-  width: 200px;
-  height: 55px;
-  top: -10px;
+  text-align: center;
   z-index: 1005;
+  position: fixed !important;
+  width: 100vw;
+  padding: 10pt;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease;
 }
 
 .tooltip_image:hover:after{
@@ -166,7 +183,7 @@ section {
   display: none;
   font-size: 16pt;
   color: #257550;
-  top: 55%;
+  top: 60%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

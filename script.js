@@ -145,7 +145,7 @@ document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
     // console.log(footnotemarkers.classList[1])
     document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
       if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
-        footnotecontents.style.display = "block";
+        footnotecontents.style.opacity = "1";
       }
 
     });
@@ -153,7 +153,7 @@ document.querySelectorAll(".footnote-marker").forEach((footnotemarkers) => {
   })
   footnotemarkers.addEventListener("mouseleave", function(){
     document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
-      footnotecontents.style.display = "none";
+      footnotecontents.style.opacity = "0";
     })
   })
 });
