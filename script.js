@@ -19,6 +19,16 @@
         let chapter8 = document.querySelector('.eight');
         let chapter9 = document.querySelector('.nine');
 
+        let nav1 = document.querySelector('#nav1');
+        let nav2 = document.querySelector('#nav2');
+        let nav3 = document.querySelector('#nav3');
+        let nav4 = document.querySelector('#nav4');
+        let nav5 = document.querySelector('#nav5');
+        let nav6 = document.querySelector('#nav6');
+        let nav7 = document.querySelector('#nav7');
+        let nav8 = document.querySelector('#nav8');
+        let nav9 = document.querySelector('#nav9');
+
         const scrollContainer = document.querySelector("main");
 
         scrollContainer.addEventListener("wheel", (evt) => {
@@ -28,15 +38,24 @@
                     let left = scrollContainer.scrollLeft;
 
                     if (left <= abs) {
-                        chapter1.style.display = "block";
-                        chapter2.style.display = "none";
-                        chapter3.style.display = "none";
-                        chapter4.style.display = "none";
-                        chapter5.style.display = "none";
-                        chapter6.style.display = "none";
-                        chapter7.style.display = "none";
-                        chapter8.style.display = "none";
-                        chapter9.style.display = "none";
+                      chapter1.style.display = "block";
+                      chapter2.style.display = "none";
+                      chapter3.style.display = "none";
+                      chapter4.style.display = "none";
+                      chapter5.style.display = "none";
+                      chapter6.style.display = "none";
+                      chapter7.style.display = "none";
+                      chapter8.style.display = "none";
+                      chapter9.style.display = "none";
+                      nav1.style.color = "black";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > abs && left < ch1) {
                       chapter1.style.display = "none";
@@ -48,6 +67,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "black";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch1 && left < ch1_1) {
                       chapter1.style.display = "none";
@@ -59,6 +87,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "black";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch1_1 && left < ch1_2) {
                       chapter1.style.display = "none";
@@ -70,6 +107,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "black";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch1_2 && left < ch1_3) {
                       chapter1.style.display = "none";
@@ -81,6 +127,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "black";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch1_3 && left < ch2) {
                       chapter1.style.display = "none";
@@ -92,6 +147,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "black";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch2 && left < ch2_1) {
                       chapter1.style.display = "none";
@@ -103,6 +167,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "black";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch2_1 && left < ch2_2) {
                       chapter1.style.display = "none";
@@ -114,6 +187,15 @@
                       chapter7.style.display = "block";
                       chapter8.style.display = "none";
                       chapter9.style.display = "none";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "black";
+                      nav8.style.color = "white";
+                      nav9.style.color = "white";
 
                     } else if (left > ch2_2 && left < ch2_3) {
                       chapter1.style.display = "none";
@@ -125,7 +207,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "block";
                       chapter9.style.display = "none";
-
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "black";
+                      nav9.style.color = "white";
                     }
                     else if (left > ch2_3) {
                       chapter1.style.display = "none";
@@ -137,6 +227,15 @@
                       chapter7.style.display = "none";
                       chapter8.style.display = "none";
                       chapter9.style.display = "block";
+                      nav1.style.color = "white";
+                      nav2.style.color = "white";
+                      nav3.style.color = "white";
+                      nav4.style.color = "white";
+                      nav5.style.color = "white";
+                      nav6.style.color = "white";
+                      nav7.style.color = "white";
+                      nav8.style.color = "white";
+                      nav9.style.color = "black";
                     }
                 });
 
@@ -209,6 +308,16 @@ if(window.innerWidth < 779) {
   let image9 = document.querySelector("#image-nine");
   let image10 = document.querySelector("#image-ten");
 
+  let nav1 = document.querySelector('#nav1');
+  let nav2 = document.querySelector('#nav2');
+  let nav3 = document.querySelector('#nav3');
+  let nav4 = document.querySelector('#nav4');
+  let nav5 = document.querySelector('#nav5');
+  let nav6 = document.querySelector('#nav6');
+  let nav7 = document.querySelector('#nav7');
+  let nav8 = document.querySelector('#nav8');
+  let nav9 = document.querySelector('#nav9');
+
   const scrollContainer = document.querySelector("main");
 
   scrollContainer.addEventListener("wheel", (evt) => {
@@ -227,6 +336,15 @@ if(window.innerWidth < 779) {
                   image7.style.display = "none";
                   image8.style.display = "none";
                   image9.style.display = "none";
+                  nav1.style.color = "black";
+                  nav2.style.color = "white";
+                  nav3.style.color = "white";
+                  nav4.style.color = "white";
+                  nav5.style.color = "white";
+                  nav6.style.color = "white";
+                  nav7.style.color = "white";
+                  nav8.style.color = "white";
+                  nav9.style.color = "white";
               } else if (left > h1 && left < h2) {
                 image1.style.display = "none";
                 image2.style.display = "block";
