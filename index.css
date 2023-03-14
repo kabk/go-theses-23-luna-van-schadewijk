@@ -49,7 +49,7 @@ section {
 
 .navigation {
   text-align: center;
-  background-color: #cbc7a8;
+  background-color: #c96333;
   color: white;
   font-size: 12pt;
   position: fixed !important;
@@ -104,7 +104,8 @@ section {
 .footnote-content {
   opacity: 0;
   text-align: center;
-  background-color: #cbc7a8;
+  background-color: #c96333;
+  color: white;
   font-size: 12pt;
   position: fixed !important;
   z-index: 1001;
@@ -126,7 +127,8 @@ section {
 .tooltip_image:after{
   opacity: 0;
   content: attr(data-tooltip);
-  background: #cbc7a8;
+  background: #c96333;
+  color: white;
   font-size: 12pt;
   text-align: center;
   z-index: 1005;
@@ -254,7 +256,7 @@ section {
   .navigationmob {
     display: block;
     text-align: center;
-    background-color: #cbc7a8;
+    background-color: #c96333;
     color: white;
     font-size: 12pt;
     position: fixed !important;
@@ -304,6 +306,14 @@ section {
     height: 90vh;
     z-index: 1000;
     pointer-events: all;
+  }
+
+  .tooltip_image:after {
+    font-size: 10pt;
+  }
+
+  .footnote-content.visible {
+    opacity: 1;
   }
 
   /* .fullheight, .visible {

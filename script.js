@@ -272,6 +272,7 @@ if(window.innerWidth < 779) {
       console.log("click")
       document.querySelectorAll(".footnote-content").forEach((footnotecontents) => {
         if (footnotecontents.classList.contains(footnotemarkers.classList[1])){
+          // document.querySelector(".footnote-content").classList.toggle("visible");
           footnotecontents.style.display = "block";
         }
 
@@ -345,7 +346,7 @@ if(window.innerWidth < 779) {
                   nav7.style.color = "white";
                   nav8.style.color = "white";
                   nav9.style.color = "white";
-              } else if (left > h1 && left < h2) {
+              } else if (top > h1 && top < h2) {
                 image1.style.display = "none";
                 image2.style.display = "block";
                 image3.style.display = "none";
@@ -355,7 +356,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h2 && left < h3) {
+              } else if (top > h2 && top < h3) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "block";
@@ -365,7 +366,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h3 && left < h4) {
+              } else if (top > h3 && top < h4) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -375,7 +376,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h4 && left < h5) {
+              } else if (top > h4 && top < h5) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -385,7 +386,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h5 && left < h6) {
+              } else if (top > h5 && top < h6) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -395,7 +396,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h6 && left < h7) {
+              } else if (top > h6 && top < h7) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -405,7 +406,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "block";
                 image8.style.display = "none";
                 image9.style.display = "none";
-              } else if (left > h7 && left < h8) {
+              } else if (top > h7 && top < h8) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -415,7 +416,7 @@ if(window.innerWidth < 779) {
                 image7.style.display = "none";
                 image8.style.display = "block";
                 image9.style.display = "none";
-              } else if (left > h8 && left < h9) {
+              } else if (top > h8 && top < h9) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
@@ -426,7 +427,7 @@ if(window.innerWidth < 779) {
                 image8.style.display = "none";
                 image9.style.display = "block";
               }
-              else if (left > h9) {
+              else if (top > h9) {
                 image1.style.display = "none";
                 image2.style.display = "none";
                 image3.style.display = "none";
